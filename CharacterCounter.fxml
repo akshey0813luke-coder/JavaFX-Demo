@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="CharacterCounterController">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <!-- Text Area -->
+    <TextArea fx:id="messageTextArea"
+              prefHeight="200"
+              text="Hello World"/>
+
+    <!-- Input Row -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Enter character:"/>
+        <TextField fx:id="characterTextField" prefWidth="50"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="countButton"
+                text="Count"
+                onAction="#handleCount"/>
+    </HBox>
+
+    <!-- Result Row -->
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Count:"/>
+        <Label fx:id="countLabel" text="0"/>
+    </HBox>
+
+</VBox>

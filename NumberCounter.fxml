@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" xmlns:fx="http://javafx.com/fxml" fx:controller="CounterController">
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <Label fx:id="countLabel" text="0" style="-fx-font-size: 24px; -fx-alignment: center;" maxWidth="Infinity"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="increaseButton" text="Increase"/>
+        <Button fx:id="decreaseButton" text="Decrease"/>
+    </HBox>
+</VBox>
